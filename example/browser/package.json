@@ -1,0 +1,21 @@
+{
+  "name": "browser-example",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ecies/post-quantum": "file:../.."
+  },
+  "devDependencies": {
+    "vite": "^7.2.2",
+    "vite-bundle-visualizer": "^1.2.1"
+  }
+}
