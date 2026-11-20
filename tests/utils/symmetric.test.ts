@@ -23,6 +23,6 @@ describe("test symmetric", () => {
     expect(() => {
       //@ts-expect-error
       symEncrypt("invalid-algo", 16, new Uint8Array(), new Uint8Array());
-    }).toThrowError("Unsupported symmetric cipher: invalid-algo");
+    }).toThrow("Unsupported symmetric cipher: invalid-algo");
   });
 });

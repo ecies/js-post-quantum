@@ -14,10 +14,10 @@ describe("test config", () => {
     DEFAULT_CONFIG.asymmetricAlgorithm = "invalid-algo";
     expect(() => {
       DEFAULT_CONFIG.pkeSize;
-    }).toThrowError("Unsupported asymmetric algorithm: invalid-algo");
+    }).toThrow("Unsupported asymmetric algorithm: invalid-algo");
 
     expect(() => {
       DEFAULT_CONFIG.asymmetricModule;
-    }).toThrowError("Unsupported asymmetric algorithm: invalid-algo");
+    }).toThrow("Unsupported asymmetric algorithm: invalid-algo");
   });
 });

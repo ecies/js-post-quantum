@@ -41,9 +41,10 @@ describe("test encrypt and decrypt", () => {
     const { publicKey: pk2 } = DEFAULT_CONFIG.asymmetricModule.keygen();
     const encrypted = encrypt(pk2, msg);
 
-    const nodeCryptoError = "Unsupported state or unable to authenticate data";
+    const nodeCryptoError =
+      "Unsupported state or unable to authenticate data|bad decrypt";
     const nobleCipherError = "invalid tag";
     const errorRegex = new RegExp(nodeCryptoError + "|" + nobleCipherError);
-    expect(() => decrypt(sk1, encrypted)).toThrowError(errorRegex);
+    expect(() => decrypt(sk1, encrypted)).toThrow(errorRegex);
   });
 });
