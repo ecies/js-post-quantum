@@ -15,7 +15,7 @@
     "@ecies/post-quantum": "file:../.."
   },
   "devDependencies": {
-    "vite": "^7.3.1",
+    "vite": "^8.3.8",
     "vite-bundle-visualizer": "^1.2.1"
   }
 }
